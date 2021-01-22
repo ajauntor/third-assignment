@@ -31,22 +31,22 @@ console.log(result);
 
 // 3.Hotel cost converter
 function hotelCost(day){
-    var totalCost = 0;
+    var allCost = 0;
     if (day <= 10) {
-        totalCost = day * 100;
+        allCost = day * 100;
     } else if (day <= 20) {
         var firstTenDay = 10 * 100;
        var remainDay = day - 10;
         var secondTenDay = remainDay * 80;
-        totalCost = firstTenDay + secondTenDay;
+        allCost = firstTenDay + secondTenDay;
     } else {
         var firstTenDay = 10 * 100;
         var secondTenDay = 10 * 80;
         var remainDay = day - 20;
         var thirdTenDay = remainDay * 50;
-        totalCost = firstTenDay + secondTenDay + thirdTenDay;
+        allCost = firstTenDay + secondTenDay + thirdTenDay;
     }
-    return totalCost;
+    return allCost;
 }
 var result = hotelCost(22);
 console.log(result);
